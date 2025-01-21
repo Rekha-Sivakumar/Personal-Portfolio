@@ -11,7 +11,7 @@
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(120deg, #ff9800, #ff5722);
+            background: rgba(143,280,240);
             background-size: 400% 400%;
             animation: gradientBG 10s ease infinite;
             color: #fff;
@@ -29,10 +29,11 @@
         }
 
         header {
+            margin:10px;
             background-color: rgba(0, 0, 0, 0.7);
             color: #fff;
-            padding: 40px 0;
-            text-align: center;
+            padding: 40px 20px;
+            text-align: left;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
@@ -55,23 +56,25 @@
         }
 
         nav a {
-            color: #ff9800;
+            color: #fff;
             margin: 0 20px;
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1.8em;
             padding: 10px 20px;
             border-radius: 30px;
             transition: background 0.3s, transform 0.3s;
         }
 
         nav a:hover {
-            background-color: #ff9800;
-            color: #fff;
-            transform: scale(1.1);
+            background-color:rgba(143,280,240,1.5);
+            color: #000;       
+            font-size: 1.8em;
+            transform: scale(1);
         }
 
         section {
-            padding: 50px 20px;
+            padding: 0.5px  20px;
+            padding-bottom:15px ;
             max-width: 1200px;
             margin: 50px auto;
             background-color: rgba(0, 0, 0, 0.6);
@@ -81,18 +84,18 @@
 
         section h2 {
             font-size: 2.5em;
-            color: #ff9800;
-            border-bottom: 2px solid #ff9800;
+            color: #fff;
+            border-bottom: 2px solid #fff;
             padding-bottom: 10px;
             margin-bottom: 30px;
         }
 
         .intro img {
             width: 100%;
-            max-width: 500px;
+            max-width: 250px;
             height: auto;
-            border-radius: 10px;
-            border: 6px solid #ff9800;
+            border-radius: 5px;
+            border: 8px solid rgba(143,280,240);
             margin-bottom: 20px;
             display: block;
             margin-left: auto;
@@ -118,9 +121,9 @@
 
         .skills ul li {
             background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
+            padding: 10px;
             margin-bottom: 15px;
-            border-left: 5px solid #ff9800;
+            border-left: 5px solid #fff;
             border-radius: 5px;
             transition: background 0.3s ease;
         }
@@ -130,7 +133,7 @@
         }
 
         footer {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color:#000;
             color: #fff;
             text-align: center;
             padding: 30px 0;
@@ -144,17 +147,17 @@
 
         .button {
             display: inline-block;
-            padding: 15px 25px;
-            background-color: #ff9800;
-            color: #fff;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
             text-decoration: none;
             border-radius: 30px;
             transition: background 0.3s ease, transform 0.3s;
         }
 
         .button:hover {
-            background-color: #e68a00;
-            transform: scale(1.1);
+            background-color: rgba(143,280,240);
+            transform: scale(1.0);
         }
 
         .projects img {
@@ -174,10 +177,10 @@
         }
 
         .view-more {
-            display: inline-block;
+            display:inline-block;
             padding: 10px 20px;
-            background-color: #ff9800;
-            color: #fff;
+            background-color: #fff;
+            color: #000;
             text-decoration: none;
             border-radius: 30px;
             margin-top: 10px;
@@ -185,26 +188,27 @@
         }
 
         .view-more:hover {
-            background-color: #e68a00;
+            background-color: rgba(143,280,240);
             transform: scale(1.1);
         }
 
-        .project-detail {
-            display: none;
-            background-color: rgba(0, 0, 0, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow-y: auto;
-            z-index: 1000;
+      
+       .project-detail {
+             display: none;
+             background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;  
+            position: fixed; 
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            width: calc(100% - 40px);
+            height: calc(100% - 40px); 
+            overflow-y: auto; 
+            box-sizing: border-box;     
+            border-radius: 10px; 
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
-        }
-
+}
         .project-detail.active {
             display: block;
         }
@@ -252,14 +256,20 @@
     <section class="intro" id="about">
         <h2>About Me</h2>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOmYPm_sMV7t38Ghc37WEYI2OtefKoVvzPwAuLvollrvqR99a1P8L6Llo&s=10" alt="Your Name">
-        <p>Hello! I am SivaKumar Rekha, a passionate student with an interest in web development. Currently pursuing B.Tech in CSE at SVCE. I enjoy working on projects that allow me to develop my skills in Developing. What makes me unique is my ability to problem-solve. I am waiting for an opportunity to prove my skills.</p>
+        <p>Hello! I am SivaKumar Rekha, a passionate and self-motivated student currently pursuing my B.Tech in Computer Science Engineering (CSE) at SVCE. I thrive on challenges and enjoy working on projects that allow me to expand my skills and knowledge.</p><p>
+
+What sets me apart is my problem-solving mindset, which helps me approach complex tasks with creativity and determination. I possess a strong foundation in programming languages such as C, Java, and Python, along with front-end technologies like HTML, CSS, and JavaScript.
+
+I am driven to learn, grow, and contribute to meaningful work.</p><p> I am seeking an opportunity where I can apply my skills, collaborate with a dynamic team, and make a positive impact, while continuing to develop professionally.
+
+</p>
     </section>
 
     <section class="Internships" id="Internships">
         <h2>Internships</h2>
         <div class="internship-item">
-            <p><strong>AI and Prompt Engineering: </strong></p>
-            <p>I completed my internship on AI and Prompt Engineering Certified by Vaultsofcode.</p>
+            <p><strong>Web Development</strong></p>
+             <p>I completed a 1-month virtual internship in Web Development, certified by Vaultsofcode.</p>
             <p style="font-size:10px">For more information. Click below....</p>
             <a href="#" class="view-more" onclick="toggleProject('internship-a')">View More</a>
         </div>
@@ -285,7 +295,7 @@
         </div>
 
         <div class="project-item">
-            <p><strong>Recipe Generator :</strong> It is designed using python.</p>
+            <p><strong>Resume Builder :</strong> Developed a responsive resume builder allowing users to input details and generate a professional resume with real-time preview.</p>
             <p style="font-size:10px">For more information. Click below....</p>
             <a href="#" class="view-more" onclick="toggleProject('project-b')">View More</a>
         </div>
@@ -300,32 +310,36 @@
        <footer id="contact">
          <p>Contact: <a href="mailto:sivakumarekha23@gmail.com">sivakumarekha23@gmail.com</a> | 
 LinkedIn: <a href="https://www.linkedin.com/in/sivakumar-rekha-54a15b24a" target="_blank" class="button">LinkedIn</a></p>
-        <p>&copy; 2024 Sivakumar Rekha . All Rights Reserved.</p>
-    </footer
+        <p>&copy; 2024 Sivakumar Rekha. All Rights Reserved.</p>
+    </footer>
 
     <!-- Internship Details -->
     <div id="internship-a" class="project-detail">
-        <h3>AI and Prompt Engineering:</h3>
+        <h3>Web Development:</h3>
         <p>It was a short-term, virtual internship. During the internship, I completed two assignments and a project. Through the assignments, I learned about the purpose and applications of AI, as well as various prompt engineering techniques. For the project, I built a simple Recipe Generator using Python, which helped me understand how AI can be leveraged in practical applications.</p>
+<p><a href="https://www.linkedin.com/posts/sivakumarrekha_web-development-internship-activity-7273214480396787713-GVax?utm_source=social_share_sheet&utm_medium=member_desktop_web">View Certificate</a></p>
         <a href="#" class="button" onclick="toggleProject('internship-a')">Close</a>
     </div>
 
     <!-- Project Details -->
     <div id="project-a" class="project-detail">
         <h3>Basic Calculator Details</h3>
-        <p>Detailed description of Basic Calculator. This project is designed using python tkinter.</p>
+        <p>The Basic Calculator is a program developed using the Python programming language. This project utilizes the Tkinter library to create its user interface. It allows users to perform fundamental mathematical calculations.</p>
         <a href="#" class="button" onclick="toggleProject('project-a')">Close</a>
     </div>
 
     <div id="project-b" class="project-detail">
-        <h3>Recipe Generator Details</h3>
-        <p>Detailed description of Recipe Generator. It is designed using Python. I designed this for the AI and Prompt Engineering internship.</p>
+        <h3>Resum Builder Details</h3>
+        <p>HTML , CSS, JavaScript
+</p><p>Developed a responsive resume builder allowing users to input details and generate a professional resume with real-time preview. Added PDF download functionality to enable users to save their generated resumes.Hosted the project on GitHub for easy access and sharing.
+<a href="https://rekha-sivakumar.github.io/RESUME-BUILDER/">Resume Builder page</a></p>
         <a href="#" class="button" onclick="toggleProject('project-b')">Close</a>
     </div>
 
     <div id="project-c" class="project-detail">
         <h3>Personal Portfolio Details</h3>
-        <p>Detailed description of Personal Portfolio. It is designed using HTML.</p>
+        <p>I have developed a personal portfolio that highlights my projects and internship experiences. This portfolio includes detailed information about my skills, achievements, and the work I have done so far. It is built using HTML, showcasing my proficiency in web development. You can view my portfolio on GitHub here:
+<a href="https://rekha-sivakumar.github.io/Personal-Portfolio/">Personal Portfolio page</a></p>
         <a href="#" class="button" onclick="toggleProject('project-c')">Close</a>
     </div>
 
